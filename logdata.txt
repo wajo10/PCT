@@ -1,0 +1,882 @@
+2021-12-15 18:17:10;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:17:10;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:17:10;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:17:10;---------Receive: 01 04 02 00 1a 38 fb
+2021-12-15 18:17:10;Response to read input registers (FC04), values: [26]
+2021-12-15 18:17:13;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:17:13;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:17:13;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:17:13;---------Receive: 01 04 02 00 1a 38 fb
+2021-12-15 18:17:13;Response to read input registers (FC04), values: [26]
+2021-12-15 18:17:22;Modbus client connected to serial network, Port: COM26, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:17:22;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:17:22;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:17:22;---------Receive: 01 04 02 00 19 78 fa
+2021-12-15 18:17:22;Response to read input registers (FC04), values: [25]
+2021-12-15 18:23:16;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:23:16;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:23:16;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:23:16;---------Receive: 81 06 82 00 1a 38 ff
+2021-12-15 18:23:23;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:23:23;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:23:23;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:23:23;---------Receive: 81 82 05 00 16 78 f2
+2021-12-15 18:23:30;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:23:30;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:23:30;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:23:35;---------Receive: 81 06 03 80 8b 9c
+2021-12-15 18:23:46;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:23:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:23:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:23:46;---------Receive: e0 c3 81 80 c5 bc fb
+2021-12-15 18:24:29;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:24:29;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:24:29;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:24:29;---------Receive: 41 04 82 80 9d f8 fe
+2021-12-15 18:24:31;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:24:31;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:24:31;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:24:31;---------Receive: 01 04 02 80 1a 3c fb
+2021-12-15 18:24:37;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:24:37;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:24:37;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:24:37;---------Receive: 60 c1 30 e0 63 77 fd
+2021-12-15 18:27:15;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:27:15;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:27:15;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:27:20;---------Receive: c0 c3 81 00 1e 38
+2021-12-15 18:27:25;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:27:25;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:27:25;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:27:25;---------Receive: c0 c2 81 80 1a 98 ff
+2021-12-15 18:27:28;Modbus client connected to serial network, Port: COM19, Baudrate: 9600, Parity: 0, Stopbits: 0
+2021-12-15 18:27:28;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2021-12-15 18:27:28;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2021-12-15 18:27:28;---------Receive: c0 84 81 00 1c 78 ff
+2022-02-16 13:50:44;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 13:50:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 13:50:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 13:50:44;---------Receive: 80 c4 81 80 9b fc fe
+2022-02-16 14:11:11;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 14:11:11;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 14:11:11;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 14:11:11;---------Receive: 01 04 02 00 1f 78 fe
+2022-02-16 14:12:49;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 14:12:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 14:12:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 14:12:49;---------Receive: 01 04 02 00 16 38 fe
+2022-02-16 14:12:49;Response to read input registers (FC04), values: [22]
+2022-02-16 14:12:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 14:12:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 14:12:54;---------Receive: 
+2022-02-16 14:13:39;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 14:13:39;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 14:13:39;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 14:13:39;---------Receive: 01 04 02 00 16 38 fe
+2022-02-16 14:13:39;Response to read input registers (FC04), values: [22]
+2022-02-16 14:13:48;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 14:13:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 14:13:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 14:13:48;---------Receive: 01 04 02 00 16 38 fe
+2022-02-16 14:13:48;Response to read input registers (FC04), values: [22]
+2022-02-16 14:52:26;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 14:52:26;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 14:52:26;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 14:52:26;---------Receive: c0 c1 80 80 88 fe fe
+2022-02-16 14:52:35;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 14:52:35;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 14:52:35;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 14:52:35;---------Receive: c0 80 81 00 3c bb fe
+2022-02-16 15:08:26;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 15:08:26;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:08:26;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:08:26;---------Receive: 01 04 02 00 17 f9 3e
+2022-02-16 15:08:26;Response to read input registers (FC04), values: [23]
+2022-02-16 15:08:42;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 15:08:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:08:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:08:42;---------Receive: 01 04 02 00 17 f9 3e
+2022-02-16 15:08:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:08:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:08:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:08:42;---------Receive: 02 04 02 00 16 7c fe
+2022-02-16 15:08:42;Response to read input registers (FC04), values: [22]
+2022-02-16 15:11:25;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 15:11:25;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:11:25;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:11:25;---------Receive: 01 04 02 00 17 f9 3e
+2022-02-16 15:11:25;Response to read input registers (FC04), values: [23]
+2022-02-16 15:11:25;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:11:25;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:11:25;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:11:25;Response to read input registers (FC04), values: [23]
+2022-02-16 15:11:30;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 15:11:30;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:11:30;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:11:31;---------Receive: 01 04 02 00 17 f9 3e
+2022-02-16 15:11:31;Response to read input registers (FC04), values: [23]
+2022-02-16 15:11:31;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:11:31;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:11:31;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:11:31;Response to read input registers (FC04), values: [23]
+2022-02-16 15:20:18;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 15:20:18;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:20:18;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:20:18;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:20:18;Response to read input registers (FC04), values: [21]
+2022-02-16 15:20:18;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:20:18;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:20:18;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:20:18;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:40;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:40;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:40;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:40;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:40;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:40;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:40;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:40;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:40;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:40;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:40;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:40;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:40;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:40;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:40;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:40;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:40;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:41;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:41;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:41;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:41;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:41;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:42;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:42;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:42;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:42;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:42;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:43;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:43;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:43;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:43;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:43;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:44;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:44;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:44;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:44;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:44;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:45;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:45;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:45;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:45;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:45;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:46;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:46;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:46;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:46;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:46;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:47;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:47;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:47;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:47;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:47;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:48;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:48;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:48;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:48;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:48;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:49;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:49;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:49;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:49;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:49;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:49;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:49;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:49;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:49;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:49;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:49;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:49;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:21:49;---------Receive: 02 04 02 00 17 bd 3e
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [23]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 01 04 03 e8 00 01 b1 ba
+2022-02-16 15:21:49;---------Receive: 01 04 02 00 15 78 ff
+2022-02-16 15:21:49;Response to read input registers (FC04), values: [21]
+2022-02-16 15:21:49;Request to read input registers (FC04), starting address: 1000, quantity: 1
+2022-02-16 15:21:49;---------Transmit: 02 04 03 e8 00 01 b1 89
+2022-02-16 15:22:55;Modbus client connected to serial network, Port: COM18, Baudrate: 9600, Parity: 0, Stopbits: 0
