@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1deed6ae-c0f2-463f-9c33-4c6ed8f1aa0d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/KellerPAA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temperature.py" beforeDir="false" afterPath="$PROJECT_DIR$/temperature.py" afterDir="false" />
-    </list>
+    <list default="true" id="1deed6ae-c0f2-463f-9c33-4c6ed8f1aa0d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +44,7 @@
       <recent name="C:\Users\wajib\OneDrive - Estudiantes ITCR\Documentos\TEC\Otros\Asistencia Materiales\KellerPressure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.kellerTESTS">
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="SPD Sensors Settings" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -250,8 +245,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.kellerTESTS" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.kellerTESTS" />
         <item itemvalue="Python.temperature" />
       </list>
     </recent_temporary>
@@ -277,7 +272,8 @@
       <workItem from="1646251743921" duration="10168000" />
       <workItem from="1646262071857" duration="291000" />
       <workItem from="1646627405557" duration="9000" />
-      <workItem from="1646843807242" duration="5543000" />
+      <workItem from="1646843807242" duration="5759000" />
+      <workItem from="1647450814161" duration="4713000" />
     </task>
     <servers />
   </component>
@@ -301,46 +297,42 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="325" y="112" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1646845818597" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1646849792129">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1647455405650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646849792129" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1647455405650" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1639374992065" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1646849792129">
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1647455405650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1646849792129" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1647455405650" />
     <state width="1493" height="210" key="GridCell.Tab.0.center/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1639374992065" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1646849792128">
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1647455405650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1646849792128" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1647455405650" />
     <state width="1493" height="210" key="GridCell.Tab.0.left/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1639374992065" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1646849792129">
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1647455405650">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1646849792129" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1647455405650" />
     <state width="1493" height="210" key="GridCell.Tab.0.right/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1639374992065" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1646261996742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1646261996742" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1638335881308" />
     <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1646261996742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1646261996742" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1638335881308" />
     <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1646261996742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1646261996742" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1638335881308" />
     <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1646261996742">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1646261996742" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1638335881308" />
     <state x="277" y="55" key="SettingsEditor" timestamp="1646262316955">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -350,6 +342,10 @@
     </state>
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1646627403712" />
     <state x="465" y="236" key="com.intellij.ide.util.TipDialog/1920.0.1920.1030/0.0.1536.824@0.0.1536.824" timestamp="1639786587253" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1647452652441">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1647452652441" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -374,8 +370,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/KellerPressure$main.coverage" NAME="main Coverage Results" MODIFIED="1639602220087" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SPD_Sensors_Settings$temperature.coverage" NAME="temperature Coverage Results" MODIFIED="1646845740601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/SPD_Sensors_Settings$main.coverage" NAME="main Coverage Results" MODIFIED="1646849585276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/SPD_Sensors_Settings$kellerTESTS.coverage" NAME="kellerTESTS Coverage Results" MODIFIED="1646849792120" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/SPD_Sensors_Settings$main.coverage" NAME="main Coverage Results" MODIFIED="1647455405640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/KellerPressure$temperature.coverage" NAME="temperature Coverage Results" MODIFIED="1646261673703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../SPD Sensors Settings" />
   </component>
 </project>

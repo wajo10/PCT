@@ -4,7 +4,7 @@ import easymodbus.modbusClient
 
 
 class Tk4(object):
-    def __init__(self, port, debug=False, logs=logging.CRITICAL):
+    def __init__(self, port: str, debug=False, logs=logging.CRITICAL):
         self.port = port
         self.modbus_client = easymodbus.modbusClient.ModbusClient(self.port)
         self.modbus_client.debug = debug
@@ -13,7 +13,7 @@ class Tk4(object):
         # self.modbus_client.stopbits = easymodbus.Stopbits.two
         # self.modbus_client.parity = easymodbus.Parity.none
 
-    def start(self, identifier):
+    def start(self, identifier: int):
         """
         Starts Control
         :param identifier:  TK4 Unit Identifier
@@ -22,7 +22,7 @@ class Tk4(object):
         self.modbus_client.write_single_coil(0, False)
         logging.info("Device #{} Starting".format(identifier))
 
-    def stop(self, identifier):
+    def stop(self, identifier: int):
         """
         Stops Control
         :param identifier:  TK4 Unit Identifier
@@ -31,7 +31,7 @@ class Tk4(object):
         self.modbus_client.write_single_coil(0, True)
         logging.info("Device #{} Stoping".format(identifier))
 
-    def set_unit(self, identifier, unit):
+    def set_unit(self, identifier: int, unit: int):
         """
         Sets Temperature Units for Readings
         :param identifier: TK4 Unit Identifier
@@ -48,7 +48,7 @@ class Tk4(object):
         temp = self.modbus_client.read_inputregisters(1000, 1)[0]
         logging.info("Actual Temperature: {}{} ".format(temp, unit))
 
-    def get_temperature(self, identifier):
+    def get_temperature(self, identifier: int) -> float:
         """
         Gets current temperature in given Unit
         :param identifier: TK4 Unit Identifier
@@ -59,7 +59,7 @@ class Tk4(object):
         logging.info("Temperature device{}: {}".format(identifier, temp))
         return temp
 
-    def get_cooling_side(self, identifier):
+    def get_cooling_side(self, identifier: int) -> float:
         """
         Gets current MV Cooling Side
         :param identifier: TK4 Unit Identifier
@@ -70,7 +70,7 @@ class Tk4(object):
         logging.info("Cooling Side device{}: {}%".format(identifier, cooling_side))
         return cooling_side
 
-    def get_heating_side(self, identifier):
+    def get_heating_side(self, identifier: int) -> float:
         """
         Gets current MV Heating Side
         :param identifier: TK4 Unit Identifier
@@ -81,7 +81,7 @@ class Tk4(object):
         logging.info("Heating Side device{}: {}%".format(identifier, heating_side))
         return heating_side
 
-    def set_value(self, identifier, value, unit):
+    def set_value(self, identifier: int, value: float, unit: int):
         """
         Temperature Set Point for controller
         :param identifier: TK4 Unit Identifier
@@ -94,7 +94,7 @@ class Tk4(object):
         self.modbus_client.write_single_register(57, value)
         logging.info("New Set Value for device{}: {}".format(identifier, value))
 
-    def get_setvalue(self, identifier):
+    def get_setvalue(self, identifier: int) -> float:
         """
         Get Set Value
         :param identifier: TK4 Unit Identifier
@@ -105,7 +105,7 @@ class Tk4(object):
         logging.info("Set Value for device{}: {}".format(identifier, set_value))
         return set_value
 
-    def get_proportional(self, identifier):
+    def get_proportional(self, identifier: int) -> float:
         """
         Gets Heating Proportional value
         :param identifier: TK4 Unit Identifier
@@ -116,7 +116,7 @@ class Tk4(object):
         logging.info("Proportional band:{} ".format(proportional))
         return proportional
 
-    def set_proportional(self, identifier, value):
+    def set_proportional(self, identifier: int, value: float):
         """
         Sets Heating Proportional value
         :param identifier: TK4 Unit Identifier
@@ -126,7 +126,7 @@ class Tk4(object):
         self.modbus_client.write_single_register(101, value * 10)
         logging.info("New Proportional: {}".format(value))
 
-    def get_integral(self, identifier):
+    def get_integral(self, identifier: int) -> float:
         """
         Gets Heating Integral Time
         :param identifier: TK4 Unit Identifier
@@ -138,7 +138,7 @@ class Tk4(object):
         logging.info("Heating Integral Time: {}".format(integral))
         return integral
 
-    def set_integral(self, identifier, value):
+    def set_integral(self, identifier: int, value: float):
         """
         Sets Heating Integral Time
         :param identifier: TK4 Unit Identifier
@@ -148,7 +148,7 @@ class Tk4(object):
         self.modbus_client.write_single_register(103, value)
         logging.info("New Integral: {}".format(value))
 
-    def get_derivative(self, identifier):
+    def get_derivative(self, identifier: int) -> float:
         """
         Gets Heating Derivative Time
         :param identifier: TK4 Unit Identifier
@@ -159,7 +159,7 @@ class Tk4(object):
         logging.info("Heating Integral Time: {}".format(derivative))
         return derivative
 
-    def set_derivative(self, identifier, value):
+    def set_derivative(self, identifier: int, value: float):
         """
         Sets Heating Derivative Time
         :param identifier: TK4 Unit Identifier

@@ -4,6 +4,10 @@ import struct
 
 
 def sensor_float(rx):
+    """
+    :param rx: Unpacked sensor value
+    :return: Decoded reading
+    """
     B = []
     sz = len(rx)
     B.append(rx[sz - 6])
@@ -35,14 +39,64 @@ class KellerPAA(object):
         self.pressure = [1, 3, 0, 2, 0, 2, 101, 203]
         self.temperature = [1, 3, 0, 8, 0, 2, 69, 201]
         self.port = port
-        self.serial = serial.Serial(self.port, 9600, timeout=0.5)
+        self.serial = serial.Serial(self.port, 9600)
+        self.offset = 0
 
     def get_temperature(self) -> float:
-        self.serial.write(struct.pack('BBBBBBBB', *self.temperature))
-        rx = struct.unpack('%dB' % 17, self.serial.readline())
-        return sensor_float(rx)
+        """
+        Gets Current Sensor Temperature
+        :return: Temperature in °C
+        """
+        try:
+            self.serial.write(struct.pack('BBBBBBBB', *self.temperature))
+            rx = struct.unpack('%dB' % 17, self.serial.read(size=17))
+            return sensor_float(rx)
+        except Exception as e:
+            print("Error reading. Retrying...", e)
+            self.hard_reset()
+            self.get_temperature()
 
     def get_pressure(self) -> float:
-        self.serial.write(struct.pack('BBBBBBBB', *self.pressure))
-        rx = struct.unpack('%dB' % 17, self.serial.readline())
-        return sensor_float(rx)
+        """
+        Gets current sensor pressure
+        :return: Pressure in kPa
+        """
+        try:
+            self.serial.write(struct.pack('BBBBBBBB', *self.pressure))
+            rx = struct.unpack('%dB' % 17, self.serial.read(size=17))
+            return (sensor_float(rx) * 100) - self.offset
+        except Exception as e:
+            print("Error reading. Retrying...", e)
+            self.hard_reset()
+            return self.get_pressure()
+
+    def set_offset(self, value: float):
+        """
+        Sets Offset for calibration
+        :param value: New Offset Value
+        """
+        self.offset = value
+
+    def reset_offset(self):
+        """
+        Sets Offset to 0
+        """
+        self.offset = 0
+
+    def get_offset(self) -> float:
+        """
+        :return: Pressure Offset
+        """
+        return self.offset
+
+    def hard_reset(self):
+        """
+        Resets Serial Port if Communication is Broken
+        Needs more testing
+        """
+        self.serial.close()
+        time.sleep(1)
+        self.serial.open()
+        self.serial.reset_input_buffer()
+        self.serial.reset_output_buffer()
+        self.serial.sendBreak(duration=1)
