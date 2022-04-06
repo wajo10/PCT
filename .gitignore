@@ -124,3 +124,7 @@ dmypy.json
 .pyre/
 
 kellerTESTS.py
+
+*.csv
+
+*.xml
