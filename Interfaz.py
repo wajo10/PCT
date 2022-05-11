@@ -1,8 +1,9 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QMessageBox, QPushButton, QMainWindow, QMenu, QAction
-import pyqtgraph as pg
-import numpy as np
+from PyQt5.QtWidgets import QMessageBox, QPushButton, QMainWindow, QMenu, QAction, QLineEdit
+from PyQt5.QtGui import QBrush, QColor, QPainter, QIntValidator
+from PyQt5.QtChart import QChart, QChartView, QValueAxis, QBarCategoryAxis, QBarSet, QBarSeries
 from PyQt5.QtCore import *
+import time
 import sys
 
 
@@ -23,6 +24,7 @@ class Ui_ventConfWindow(QMainWindow):
         self.font.setPointSize(15)
         self.font.setBold(True)
         self.font.setWeight(20)
+        self.update = False
 
         self.setValue = [0, 0]
         self.temperatureValue = [0, 0]
@@ -33,24 +35,34 @@ class Ui_ventConfWindow(QMainWindow):
         self.kellerPressure = [0, 0]
         self.kellerTemperature = [0, 0]
 
-        self.BGCOLOR = "#05121c"
+        # self.BGCOLOR = "#05121c"
+        self.BGCOLOR = "#969595"
 
         self.setWindowTitle('SPD Monitor')
         self._createMenuBar()
         self.setupUi()
+        self.show()
 
     def _createMenuBar(self):
         menuBar = self.menuBar()
-        menuBar.setStyleSheet("""QMenuBar { background-color: rgb(225, 225, 225); }""")
-        qMenuStyle = """QMenu { background-color: #ABABAB; margin: 2px;}"""
-        # Creating menus using a QMenu object
+        menuBar.setStyleSheet("""QMenuBar { background-color: #F1EFF2; }""")
+        qMenuStyle = """QMenu { background-color: #F1EFF2; margin: 2px;}"""
+        # Adding Actions
         self.openAction = QAction("&Open...", self)
+        self.portsAction = QAction("&Puertos", self)
+        self.calibrationAction = QAction("&Calibración Presión", self)
+        # self.openAction.triggered.connect(self.open)
+
+        # Creating menus using a QMenu object
         fileMenu = QMenu("&Archivo", self)
         fileMenu.setStyleSheet(qMenuStyle)
         fileMenu.addAction(self.openAction)
         menuBar.addMenu(fileMenu)
         # Creating menus using a title
-        editMenu = menuBar.addMenu("&Configuración")
+        toolsMenu = menuBar.addMenu("&Herramientas")
+        toolsMenu.setStyleSheet(qMenuStyle)
+        toolsMenu.addAction(self.portsAction)
+        toolsMenu.addAction(self.calibrationAction)
         self.setMenuBar(menuBar)
 
     def setupUi(self):
@@ -64,9 +76,7 @@ class Ui_ventConfWindow(QMainWindow):
 
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget.setGeometry(
-            QtCore.QRect(resize(1.041, self.width), resize(1.85, self.height), resize(75, self.width),
-                         resize(70, self.height)))
-
+            QtCore.QRect(0, 0, 180, 250))
 
         # Layout 1
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
@@ -76,39 +86,111 @@ class Ui_ventConfWindow(QMainWindow):
         self.verticalLayout.setObjectName("verticalLayout")
 
         # Grid
-        self.grid = QtWidgets.QWidget(self.verticalLayoutWidget)
-        self.grid.setGeometry(QtCore.QRect(resize(0, self.width), resize(0, self.height), resize(15, self.width),
-                                           resize(15, self.height)))
+        self.grid = QtWidgets.QWidget(self.centralwidget)
+        self.grid.setGeometry(QtCore.QRect(250, 0, 500, 200))
         self.grid.setObjectName("gridLayoutWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.grid)
-        self.gridLayout.setContentsMargins(0, 0, 0, 0)
-        #self.gridLayout.setSpacing(1)
+        self.gridLayout.setContentsMargins(0, 80, 0, 0)
         self.gridLayout.setObjectName("gridLayout")
+        self.gridLayout.setRowStretch(4, 1)
 
-        # Label Temperatura Horno
-        self.ovenLabel = QtWidgets.QLabel(self.grid)
-        self.ovenLabel.setText("Temperatura Horno  °C")
-        self.ovenLabel.setStyleSheet("background-color: transparent; color: rgb(255, 255, 255);")
-        self.ovenLabel.setFont(self.font)
-        self.ovenLabel.setAlignment(Qt.AlignCenter)
-        self.ovenLabel.setObjectName("ovenLabel")
-        self.gridLayout.addWidget(self.ovenLabel, 0, 0)
+        # Grafica Heating Side Horno
+        self.series = QBarSeries()
+        self.set0 = QBarSet('Horno')
+        self.set0.append([50])
+        self.series.append(self.set0)
+        self.chart = QChart()
+        self.chart.addSeries(self.series)
+        self.chart.setAnimationOptions(QChart.SeriesAnimations)
+        axisX = QBarCategoryAxis()
+        axisX.append("%")
 
-        # Valor de Temperatura Horno
+        axisY = QValueAxis()
+        axisY.setRange(0, 100)
+
+        self.chart.setAxisX(axisX)
+        self.chart.setAxisY(axisY)
+        self.series.attachAxis(axisX)
+        self.series.attachAxis(axisY)
+
+        self.chart.legend().setVisible(False)
+        self.chart.legend().setAlignment(Qt.AlignBottom)
+
+        self.chartView = QChartView(self.chart)
+        self.chart.setBackgroundBrush(QBrush(QColor(self.BGCOLOR)))
+        self.verticalLayout.addWidget(self.chartView)
+
+        # Label Temperatura Camara
+        self.chamberLabel = QtWidgets.QLabel(self.grid)
+        self.chamberLabel.setText("Temperatura Cámara")
+        self.chamberLabel.setStyleSheet("background-color: transparent; color: rgb(0, 0, 0);")
+        self.chamberLabel.setFont(self.font)
+        self.chamberLabel.setAlignment(Qt.AlignCenter)
+        self.chamberLabel.setObjectName("chamberLabel")
+        self.gridLayout.addWidget(self.chamberLabel, 0, 1)
+
+        # Valor de Temperatura Camara
         self.font.setPointSize(20)
-        self.ovenText = QtWidgets.QLabel(self.grid)
-        self.ovenText.setText(str(self.temperatureValue[0]))
-        self.ovenText.setObjectName("ovenText")
-        self.ovenText.setFont(self.font)
-        self.ovenText.setStyleSheet("background-color: transparent; color: rgb(255, 255, 255);")
-        self.ovenText.setAlignment(Qt.AlignCenter)
-        self.gridLayout.addWidget(self.ovenText, 1, 0)
+        self.chamberText = QtWidgets.QLabel(self.grid)
+        self.chamberText.setText(str(self.temperatureValue[0]) + "°C")
+        self.chamberText.setObjectName("chamberText")
+        self.chamberText.setFont(self.font)
+        self.chamberText.setStyleSheet("background-color: transparent; color: rgb(0, 0, 0);")
+        self.chamberText.setAlignment(Qt.AlignCenter)
+        self.gridLayout.addWidget(self.chamberText, 1, 1)
 
         self.setCentralWidget(self.centralwidget)
         QtCore.QMetaObject.connectSlotsByName(self)
-        self.show()
+
+        # Label SetPoint Cámara
+        self.font.setPointSize(15)
+        self.spChamberLabel = QtWidgets.QLabel(self.grid)
+        self.spChamberLabel.setText("Set Point Cámara (°C)")
+        self.spChamberLabel.setStyleSheet("background-color: transparent; color: rgb(0, 0, 0);")
+        self.spChamberLabel.setFont(self.font)
+        self.spChamberLabel.setAlignment(Qt.AlignCenter)
+        self.spChamberLabel.setObjectName("spChamberLabel")
+        self.gridLayout.addWidget(self.spChamberLabel, 0, 2)
+
+        # Set Point Cámara
+        self.font.setPointSize(20)
+        self.setPointLine = QLineEdit()
+        self.setPointLine.setValidator(QIntValidator())
+        self.setPointLine.setMaxLength(3)
+        self.setPointLine.setText(str(self.setValue[0]))
+        self.setPointLine.setFont(self.font)
+        self.setPointLine.setAlignment(Qt.AlignRight)
+        self.setPointLine.setFixedWidth(80)
+        self.gridLayout.addWidget(self.setPointLine, 1, 2, alignment=QtCore.Qt.AlignCenter)
+
+        # Boton Ok
+        styleSheet = "background-color: rgb(190, 187, 191); border-style: outset; " \
+                     "border-width: 2px; border-radius: 5px; padding: 4px; " \
+                     "color: black; border-color: rgb(0, 0, 0)"
+        self.stableButton = QPushButton(self.centralwidget)
+        self.stableButton.setStyleSheet(styleSheet)
+        self.stableButton.setFont(self.font)
+        self.stableButton.setText("Ok")
+        self.stableButton.setGeometry(1700, 850, 80, 50)
+        self.stableButton.show()
+        self.stableButton.clicked.connect(lambda: self.updateParams())
+
+    def chamberValue(self, value):
+        """
+        Updates Chamber Graph
+        :param value: New Chamber Value
+        """
+        self.set0.remove(0, 1)
+        self.set0.append(value)
+        self.series.append(self.set0)
+        self.chart.addSeries(self.series)
+    
+    def updateParams(self):
+        self.update = True
+        self.setValue[0] = int(self.setPointLine.text())
+    
 
 
 app = QtWidgets.QApplication(sys.argv)
 QtWidgets.QMainWindow()
-ui = Ui_ventConfWindow()
+

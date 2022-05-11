@@ -44,7 +44,7 @@ class KellerPAA(object):
 
     def get_temperature(self) -> float:
         """
-        Gets Current Sensor Temperature
+        Returns Current Sensor Temperature
         :return: Temperature in °C
         """
         try:
@@ -58,7 +58,7 @@ class KellerPAA(object):
 
     def get_pressure(self) -> float:
         """
-        Gets current sensor pressure
+        Returns current sensor pressure
         :return: Pressure in kPa
         """
         try:

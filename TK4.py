@@ -50,7 +50,7 @@ class Tk4(object):
 
     def get_temperature(self, identifier: int) -> float:
         """
-        Gets current temperature in given Unit
+        Returns current temperature in given Unit
         :param identifier: TK4 Unit Identifier
         :return: Temperature in °C or °F
         """
@@ -61,7 +61,7 @@ class Tk4(object):
 
     def get_cooling_side(self, identifier: int) -> float:
         """
-        Gets current MV Cooling Side
+        Returns current MV Cooling Side
         :param identifier: TK4 Unit Identifier
         :return: Cooling Side %
         """
@@ -72,7 +72,7 @@ class Tk4(object):
 
     def get_heating_side(self, identifier: int) -> float:
         """
-        Gets current MV Heating Side
+        Returns current MV Heating Side
         :param identifier: TK4 Unit Identifier
         :return: Heating Side %
         """
@@ -107,7 +107,7 @@ class Tk4(object):
 
     def get_proportional(self, identifier: int) -> float:
         """
-        Gets Heating Proportional value
+        Returns Heating Proportional value
         :param identifier: TK4 Unit Identifier
         :return: Heating Proportional Band either in °C or °F
         """
@@ -128,7 +128,7 @@ class Tk4(object):
 
     def get_integral(self, identifier: int) -> float:
         """
-        Gets Heating Integral Time
+        Returns Heating Integral Time
         :param identifier: TK4 Unit Identifier
         :return: Heating Integral Time in Sec.
         """
@@ -150,7 +150,7 @@ class Tk4(object):
 
     def get_derivative(self, identifier: int) -> float:
         """
-        Gets Heating Derivative Time
+        Returns Heating Derivative Time
         :param identifier: TK4 Unit Identifier
         :return: Heating Derivative Time in Sec.
         """
