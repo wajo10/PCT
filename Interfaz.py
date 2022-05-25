@@ -1,14 +1,65 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QMessageBox, QPushButton, QMainWindow, QMenu, QAction, QLineEdit
+from PyQt5.QtWidgets import QMessageBox, QPushButton, QMainWindow, QMenu, QAction, QLineEdit, QComboBox
 from PyQt5.QtGui import QBrush, QColor, QPainter, QIntValidator
 from PyQt5.QtChart import QChart, QChartView, QValueAxis, QBarCategoryAxis, QBarSet, QBarSeries
 from PyQt5.QtCore import *
 import time
 import sys
+import getSerial
 
 
 def resize(value, conversion):
     return int(value * conversion / 100)
+
+
+class PortsWindow(QMainWindow):
+    def __init__(self, main):
+        super().__init__()
+        self.setWindowTitle("Configuración de Puertos")
+        self.width = 440
+        self.height = 320
+        QMainWindow.resize(self, self.width, self.height)
+
+        self.font = QtGui.QFont()
+        self.font.setFamily("Arial")
+        self.font.setPointSize(10)
+
+        self.ports = getSerial.get_ports()
+        self.centralwidget = QtWidgets.QWidget(self)
+        self.centralwidget.setObjectName("centralwidget")
+        self.centralwidget.setGeometry(QtCore.QRect(0, 0, self.width, self.height))
+
+        self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
+        self.verticalLayoutWidget.setGeometry(
+            QtCore.QRect(int(self.width / 4), 50, int(self.width / 2), int(self.height/3)))
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
+        self.verticalLayout.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout.setSpacing(2)
+        self.verticalLayout.setObjectName("verticalLayout")
+
+        self.AutonicsLayout = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.AutonicsLayout.setText("Puerto Autonics Controller")
+        self.AutonicsLayout.setObjectName("AutonicsLayout")
+        self.AutonicsLayout.setFont(self.font)
+
+        self.KellerLayout = QtWidgets.QLabel(self.verticalLayoutWidget)
+        self.KellerLayout.setText("Puerto Keller Pressure")
+        self.KellerLayout.setObjectName("KellerLayout")
+        self.KellerLayout.setFont(self.font)
+
+        self.cbAutonics = QComboBox()
+        self.cbKeller = QComboBox()
+        for p in self.ports:
+            self.cbAutonics.addItem(p.name)
+            self.cbKeller.addItem(p.name)
+
+        self.verticalLayout.addWidget(self.AutonicsLayout)
+        self.verticalLayout.addWidget(self.cbAutonics)
+        self.verticalLayout.addWidget(self.KellerLayout)
+        self.verticalLayout.addWidget(self.cbKeller)
+
+
 
 
 class Ui_ventConfWindow(QMainWindow):
@@ -52,6 +103,7 @@ class Ui_ventConfWindow(QMainWindow):
         self.portsAction = QAction("&Puertos", self)
         self.calibrationAction = QAction("&Calibración Presión", self)
         # self.openAction.triggered.connect(self.open)
+        self.portsAction.triggered.connect(self.select_ports)
 
         # Creating menus using a QMenu object
         fileMenu = QMenu("&Archivo", self)
@@ -64,6 +116,10 @@ class Ui_ventConfWindow(QMainWindow):
         toolsMenu.addAction(self.portsAction)
         toolsMenu.addAction(self.calibrationAction)
         self.setMenuBar(menuBar)
+
+    def select_ports(self):
+        self.dialog = PortsWindow(self)
+        self.dialog.show()
 
     def setupUi(self):
         self.setObjectName("GUIWindow")
@@ -184,13 +240,11 @@ class Ui_ventConfWindow(QMainWindow):
         self.set0.append(value)
         self.series.append(self.set0)
         self.chart.addSeries(self.series)
-    
+
     def updateParams(self):
         self.update = True
         self.setValue[0] = int(self.setPointLine.text())
-    
 
 
 app = QtWidgets.QApplication(sys.argv)
 QtWidgets.QMainWindow()
-
