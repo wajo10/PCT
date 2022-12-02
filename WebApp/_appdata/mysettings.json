@@ -1,0 +1,12 @@
+{
+    "language": "es",
+    "uiPort": 1881,
+    "secureEnabled": false,
+    "tokenExpiresIn": "",
+    "smtp": {
+        "host": "",
+        "port": 587,
+        "mailsender": "",
+        "username": ""
+    }
+}

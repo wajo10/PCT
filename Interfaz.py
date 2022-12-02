@@ -8,10 +8,6 @@ import sys
 import getSerial
 
 
-def resize(value, conversion):
-    return int(value * conversion / 100)
-
-
 class PortsWindow(QMainWindow):
     def __init__(self, main):
         super().__init__()
@@ -32,7 +28,7 @@ class PortsWindow(QMainWindow):
         self.verticalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
         self.verticalLayoutWidget.setObjectName("verticalLayoutWidget")
         self.verticalLayoutWidget.setGeometry(
-            QtCore.QRect(int(self.width / 4), 50, int(self.width / 2), int(self.height/3)))
+            QtCore.QRect(int(self.width / 4), 50, int(self.width / 2), int(self.height / 3)))
         self.verticalLayout = QtWidgets.QVBoxLayout(self.verticalLayoutWidget)
         self.verticalLayout.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout.setSpacing(2)
@@ -51,15 +47,15 @@ class PortsWindow(QMainWindow):
         self.cbAutonics = QComboBox()
         self.cbKeller = QComboBox()
         for p in self.ports:
-            self.cbAutonics.addItem(p.name)
-            self.cbKeller.addItem(p.name)
+            if p.serial_number == "A907ZIHUA":
+                self.cbAutonics.addItem(p.name)
+            elif p.serial_number == "5":
+                self.cbKeller.addItem(p.name)
 
         self.verticalLayout.addWidget(self.AutonicsLayout)
         self.verticalLayout.addWidget(self.cbAutonics)
         self.verticalLayout.addWidget(self.KellerLayout)
         self.verticalLayout.addWidget(self.cbKeller)
-
-
 
 
 class Ui_ventConfWindow(QMainWindow):

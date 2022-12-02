@@ -10,8 +10,6 @@ class Tk4(object):
         self.modbus_client.debug = debug
         self.modbus_client.logging_level = logs
         self.modbus_client.connect()
-        # self.modbus_client.stopbits = easymodbus.Stopbits.two
-        # self.modbus_client.parity = easymodbus.Parity.none
 
     def start(self, identifier: int):
         """

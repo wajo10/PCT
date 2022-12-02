@@ -3,12 +3,14 @@ from PyQt5 import QtWidgets, QtCore, QtGui
 import Interfaz
 import time
 from threading import Thread
+import getSerial
 from TK4 import Tk4
 
 ### START QtApp #####
 app = QApplication([])
 error_dialog = QtWidgets.QErrorMessage()
-tk4 = Tk4("COM18", False)
+tk4Port = getSerial.get_autonics()
+tk4 = Tk4(tk4Port, False)
 
 
 def update():
