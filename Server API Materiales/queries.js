@@ -1,5 +1,6 @@
 const axios = require('axios');
 var promise = require('bluebird');
+const path = require("path");
 var socket = undefined;
 
 var options = {
@@ -37,10 +38,7 @@ function getAll(req, res, next) {
         console.log(msg);
         if (msg !== "Error") {
             res.status(200)
-                .json({
-                    status: 'success',
-                    data: msg
-                });
+                .send(msg);
         } else {
             res.status(504)
                 .json({
@@ -67,8 +65,51 @@ function set_setValues(req, res, next) {
     });
 }
 
+function start_logging(req, res, next) {
+    socket.emit("Command", "StartLogging");
+    socket.on('StartResult', function (msg) {
+        console.log(msg);
+        res.status(200)
+            .json({
+                status: 'success',
+                data: msg
+            });
+        socket.removeAllListeners("StartResult")
+    });
+}
+
+function stop_logging(req, res, next) {
+    socket.emit("Command", "StopLogging");
+    socket.on('StopResult', function (msg) {
+        console.log(msg);
+        res.status(200)
+            .json({
+                status: 'success',
+                data: msg
+            });
+        socket.removeAllListeners("StopResult")
+    });
+}
+
+function send_file(req, res, next) {
+    var options = {
+        root: path.join(__dirname,"..")
+    };
+    var fileName = 'register.csv';
+    res.sendFile(fileName, options, function (err) {
+        if (err) {
+            next(err);
+        } else {
+            console.log('Sent:', fileName);
+        }
+    });
+}
+
 module.exports = {
     updateSock: updateSock,
     getAll: getAll,
-    set_setValues: set_setValues
+    set_setValues: set_setValues,
+    send_file: send_file,
+    start_logging: start_logging,
+    stop_logging: stop_logging,
 };

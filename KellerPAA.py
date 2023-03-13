@@ -39,36 +39,47 @@ class KellerPAA(object):
         self.pressure = [1, 3, 0, 2, 0, 2, 101, 203]
         self.temperature = [1, 3, 0, 8, 0, 2, 69, 201]
         self.port = port
-        self.serial = serial.Serial(self.port, 9600)
         self.offset = 0
+        self.connected = False
+        try:
+            self.serial = serial.Serial(self.port, 9600)
+            self.connected = True
+        except Exception as e:
+            print("Error connecting to KellerPAA", e)
 
     def get_temperature(self) -> float:
         """
         Returns Current Sensor Temperature
         :return: Temperature in °C
         """
-        try:
-            self.serial.write(struct.pack('BBBBBBBB', *self.temperature))
-            rx = struct.unpack('%dB' % 17, self.serial.read(size=17))
-            return sensor_float(rx)
-        except Exception as e:
-            print("Error reading. Retrying...", e)
-            self.hard_reset()
-            self.get_temperature()
+        if self.connected:
+            try:
+                self.serial.write(struct.pack('BBBBBBBB', *self.temperature))
+                rx = struct.unpack('%dB' % 17, self.serial.read(size=17))
+                return sensor_float(rx)
+            except Exception as e:
+                print("Error reading. Retrying...", e)
+                self.hard_reset()
+                self.get_temperature()
+        else:
+            return -500
 
     def get_pressure(self) -> float:
         """
         Returns current sensor pressure
         :return: Pressure in kPa
         """
-        try:
-            self.serial.write(struct.pack('BBBBBBBB', *self.pressure))
-            rx = struct.unpack('%dB' % 17, self.serial.read(size=17))
-            return (sensor_float(rx) * 100) - self.offset
-        except Exception as e:
-            print("Error reading. Retrying...", e)
-            self.hard_reset()
-            return self.get_pressure()
+        if self.connected:
+            try:
+                self.serial.write(struct.pack('BBBBBBBB', *self.pressure))
+                rx = struct.unpack('%dB' % 17, self.serial.read(size=17))
+                return (sensor_float(rx) * 100) - self.offset
+            except Exception as e:
+                print("Error reading. Retrying...", e)
+                self.hard_reset()
+                return self.get_pressure()
+        else:
+            return -500
 
     def set_offset(self, value: float):
         """

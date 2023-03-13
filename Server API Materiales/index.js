@@ -59,6 +59,9 @@ router.use(function(req, res, next) {
 // Routes
 router.get('/api/SPD/All/', queries.getAll); //Get all parameters
 router.get('/api/SPD/setValues/:command/:value', queries.set_setValues); //Set point values
+router.get('/api/SPD/logs', queries.send_file); //Send Logs File
+router.get('/api/SPD/startLogging', queries.start_logging); //Start Logging
+router.get('/api/SPD/stopLogging', queries.stop_logging); //Stop Logging
 
 router.get('/', async (req, res) => {
     res.render('index', {title: 'SPD Server'}); // load the single view file (angular will handle the page changes on the front-end)

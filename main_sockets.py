@@ -6,6 +6,8 @@ import threading
 import getSerial
 from TK4 import Tk4
 from KellerPAA import KellerPAA
+from Writer import Writer
+import datetime
 
 sio = socketio.Client()
 
@@ -16,6 +18,7 @@ tk4 = Tk4(tk4Port, False)
 keller = KellerPAA(getSerial.get_keller())
 
 allValues: str = ""
+logging = logging_aux = False
 
 
 @sio.event
@@ -56,6 +59,13 @@ def on_message(data):
         sio.emit("SetResult", "OK")
         serverInterrupt = False
         print("Oven set value: {}".format(value))
+    elif data == "StartLogging":
+        start_logging()
+        sio.emit("StartResult", "OK")
+    elif data == "StopLogging":
+        stop_logging()
+        sio.emit("StopResult", "OK")
+
     else:
         sio.emit("Result", "Error, command not found")
 
@@ -85,7 +95,7 @@ def get_oven_set_value():
 
 
 def update():
-    global serverInterrupt, allValues
+    global serverInterrupt, allValues, logging, logging_aux
     while True:
         if not serverInterrupt:
             chamberTemperature = get_chamber_temperature()
@@ -104,11 +114,45 @@ def update():
             time.sleep(0.1)
             ovenSetValue = get_oven_set_value()
             time.sleep(0.1)
-            allValues = "{}, {}, {}, {}, {}, {}, {}, {}".format(chamberTemperature, ovenTemperature,
-                                                                chamberHeatingSide, ovenHeatingSide,
-                                                                chamberSetValue, ovenSetValue,
-                                                                kellerTemperature, kellerPressure)
+            allValues = '{{"ChamberTemp":{}, "OvenTemp":{}, "ChamberHeating":{}, "OvenHeating":{}, "ChamberSetValue":{}, ' \
+                        '"OvenSetValue":{}, "KellerTemp":{}, "KellerPress":{}}}'.format(
+                chamberTemperature, ovenTemperature,
+                chamberHeatingSide, ovenHeatingSide,
+                chamberSetValue, ovenSetValue,
+                kellerTemperature, kellerPressure)
+            if logging:
+                if logging_aux:
+                    header = ["Timestamp", "Chamber Temperature", "Oven Temperature", "Chamber Heating Side",
+                              "Oven Heating Side",
+                              "Chamber Set Value", "Oven Set Value", "Chamber Proportional", "Oven Proportional",
+                              "Chamber Integral", "Oven Integral", "Chamber Derivative", "Oven Derivative",
+                              "Keller Temperature", "Keller Pressure"]
+                    writer = Writer('register.csv', header)
+                    logging_aux = False
+                values = [datetime.datetime.now(), chamberTemperature, ovenTemperature,
+                          chamberHeatingSide, ovenHeatingSide, chamberSetValue, ovenSetValue, tk4.get_proportional(1),
+                          tk4.get_proportional(2), tk4.get_integral(1), tk4.get_integral(2), tk4.get_derivative(1),
+                          tk4.get_derivative(2), kellerTemperature, kellerPressure]
+                writer.write_row(values)
+                print(values)
+
         time.sleep(1)
+
+def start_logging():
+    global logging, logging_aux
+
+    #clear register.csv
+    with open('register.csv', 'w') as f:
+        f.write('')
+        f.close()
+    logging = True
+    logging_aux = True
+
+def stop_logging():
+    global logging
+    logging = False
+
+
 
 
 # Wait until connection is established with server
