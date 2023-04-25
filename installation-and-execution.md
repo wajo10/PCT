@@ -20,7 +20,7 @@ npm install -g --unsafe-perm @frangoteam/fuxa
 * Open a terminal on the "Server API" folder
 * Run the command:
   * `npm install`
-* `Go to the "Controller" folder and execute:`
+* Go to the "Controller" folder and execute:
   * `pip install -r requirements.txt`
 
 ## Running the system
