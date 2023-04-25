@@ -128,3 +128,5 @@ kellerTESTS.py
 *.csv
 
 *.xml
+
+Server API Materiales/node_modules/
