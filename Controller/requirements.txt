@@ -1,0 +1,7 @@
+EasyModbus==1.4.0
+PyQt5==5.15.9
+PyQt5_sip==12.10.1
+PyQt5_sip==12.9.0
+pyserial==3.5
+python-socketio==5.8.0
+python_engineio==4.3.4

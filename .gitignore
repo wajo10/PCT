@@ -130,3 +130,11 @@ kellerTESTS.py
 *.xml
 
 Server API Materiales/node_modules/
+
+Controller/.idea/
+
+Server API/node_modules/.bin/
+
+Server API/node_modules/
+
+WebApp/_db/

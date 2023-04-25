@@ -13,6 +13,7 @@ var options = {
 
 function updateSock(sock) {
     socket = sock;
+    console.log("Socket Updated");
 }
 
 
