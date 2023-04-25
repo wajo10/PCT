@@ -29,6 +29,6 @@ IMPORTANT: all sensors must be connected and turned on for this to work.
 
 * If you are using windows just run the file `WindowsExec.bat`&#x20;
 * If you are using Linux/Raspbian execute:&#x20;
-  * `sudo chmod +x` RaspbianExec.sh
+  * `sudo chmod +x RaspbianExec.sh`
   * `./RaspbianExec.sh`
 
