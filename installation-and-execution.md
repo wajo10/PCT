@@ -3,7 +3,8 @@
 ## Cloning the repository
 
 * The repository is available in this [github repo](https://github.com/wajo10/PCT).&#x20;
-* Using your terminal you can simply use the command: `git clone` [`https://github.com/wajo10/PCT.git`](https://github.com/wajo10/PCT.git)
+* Using your terminal you can simply use the command:&#x20;
+  * `git clone` [`https://github.com/wajo10/PCT.git`](https://github.com/wajo10/PCT.git)
 * Or you can download the repo as a zip file from [the repo URL](https://github.com/wajo10/PCT) and decompress it.
 
 ## Installing FUXA
